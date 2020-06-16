@@ -1,0 +1,11 @@
+:host{
+  display: block;
+  margin-top: 1rem;
+}
+
+.info-text {
+  text-align: center;
+  font-size: 1rem;
+  background-color: darkturquoise;
+  padding: 20px 20px;
+}

@@ -1,0 +1,30 @@
+<!-- <h1>Post Create Component</h1>
+<h2>My Name is Riashad and this is my practice using MEAN Stack</h2>
+
+<!-- Getting User Input: Manually using #Marker -->
+<!-- <h3>Getting User Input: Manually using #Marker</h3><hr>
+<textarea id="userInputID" rows="10" [value] = 'newPost1' #postUserInput ></textarea>
+<hr>
+<button (click)="onAddPost(postUserInput)">Save</button>
+<p>{{newPost1}}</p>
+
+<br>
+<br>
+<br> -->
+
+<!-- Getting User Input: Dynamically using Two Way Binding -->
+<!-- <h3>Getting User Input: Dynamically using Two Way Binding</h3><br> -->
+
+<mat-card>
+  <mat-form-field>
+    <mat-label>Enter Post Title</mat-label>
+    <input matInput type="text" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Enter Post Content</mat-label>
+    <textarea matInput rows="6" [(ngModel)]="enteredContent"></textarea>
+  </mat-form-field><br>
+  <button mat-raised-button color="accent" (click)="createPost()">Show</button><br><br>
+  <mat-divider [inset]="true"></mat-divider>
+</mat-card>
